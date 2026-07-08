@@ -1,0 +1,99 @@
+.footer {
+  background-color: $bg;
+  padding: 60px 0 40px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__logo {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 28px;
+  color: $weiß;
+  text-decoration: none;
+}
+
+.footer__text {
+  font-family: $font-family;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $weiß;
+  opacity: 0.8;
+  max-width: 280px;
+}
+
+.footer__about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer__about-blog,
+.footer__about-mntn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__about-title {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 16px;
+  color: $accent;
+  margin-bottom: 16px;
+}
+
+.footer__about-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__about-link {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 15px;
+  color: $weiß;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__about-container {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .footer__text-wrap {
+    max-width: 320px;
+  }
+
+  .footer__about-container {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 100px;
+  }
+}

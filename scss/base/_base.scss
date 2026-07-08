@@ -1,0 +1,31 @@
+body{
+    background-image: url(./../../photos/body-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    background-color: $bg;
+}
+
+.container{
+    width: 360px;
+    padding: 0 15px;
+    margin: 0 auto; 
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1464px){
+    .container{
+        width: 1464px;
+    }
+}
