@@ -57,7 +57,7 @@ a {
 }
 
 body {
-  background-image: url(./../../photos/body-bg.png);
+  background-image: url(./../photos/body-bg.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: 1920px;
@@ -95,7 +95,7 @@ body {
   inset: 0;
   background-color: rgba(11, 29, 38, 0.21);
   z-index: 2;
-  width: 100vw;
+  width: 100%;
 }
 
 .top__bar {
@@ -410,6 +410,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 90%;
 }
 
 .footer__text-wrap {
