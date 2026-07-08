@@ -1,0 +1,80 @@
+.mobile__menu {
+  position: fixed;
+  inset: 0;
+  background-color: $bg;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  z-index: 1000;
+}
+
+.mobile__menu.active {
+  display: flex;
+}
+
+.close__mobile-menu {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  background: transparent;
+  border: none;
+  color: $weiß;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close__mobile-menu:hover {
+  transform: scale(1.1);
+}
+
+.mobile__menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile__menu-nav-link {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 28px;
+  color: $weiß;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobile__menu-nav-link:hover {
+  color: #fbd784;
+}
+
+.mobile__menu .header__login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 600;
+  color: $weiß;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.mobile__menu .header__login:hover {
+  color: #fbd784;
+}
+
+.mobile__menu .header__login svg {
+  width: 20px;
+  height: 20px;
+}

@@ -6,10 +6,19 @@ body{
     background-color: $bg;
 }
 
+body.menu-open {
+  overflow: hidden;
+  touch-action: none;
+}
+
 .container{
     width: 360px;
     padding: 0 15px;
     margin: 0 auto; 
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 768px){
